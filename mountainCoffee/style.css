@@ -1,0 +1,287 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+/******************************************
+/* Fonts and Colors
+/*******************************************/
+body {
+     background-color: rgb(79, 109, 79);
+     color: white;
+     font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+     font-size: 3.5rem;
+     font-family: 'Yeseva One', cursive, serif;
+     font-weight: normal;
+     color: white;
+}
+
+h2 {
+     font-size: 2.5rem;
+     font-family: 'Yeseva One', cursive, serif;
+     font-weight: normal;
+}
+
+h4 {
+     font-size: 1.3rem;
+     font-weight: bold;
+     padding: 7% 0 3% 0;
+}
+
+a {
+     text-decoration: none;
+     color: white;
+     font-weight: bold;
+}
+li {
+     list-style: none;
+     
+}
+
+/******************************************
+/* Background Images
+/*******************************************/
+.hero {
+     background-image: url("assets/hotcoffeeonwood.jpg");
+     background-size: cover;
+     background-position: bottom;
+     
+}
+
+.aboutUs {
+     background-image: url("assets/mountainview.jpg");
+     background-size: cover;
+     background-repeat:no-repeat;
+     background-position: bottom;
+
+}
+.orderOnline {
+     background-color: rgb(242, 246, 247);
+     
+}
+.bookTable {
+     background-color: forestgreen;
+     background-repeat: no-repeat;
+     background-size: cover;
+     
+}
+.testimonials{
+     background-color: rgb(255, 255, 255);
+}
+
+
+/******************************************
+/* Mobile layout
+/*******************************************/
+@media all and (max-width: 480px) {
+     
+
+     nav ul{
+          display: none;
+     }
+     .hero {
+          padding: 20% 2% 0 2%;
+     }
+}
+
+
+
+/******************************************
+/* Larger Screens
+/*******************************************/
+@media all and (min-width: 481px){
+     #navBar {
+     position: fixed;
+     background-color: rgb(79, 109, 79);
+     height: 7%; 
+     width: 100%; 
+     transition: top 0.3s; 
+     }
+
+     nav ul{
+          display: flex;
+          justify-content: space-between;
+          align-content: flex-end;
+          padding: 2% 5% 2% 50%;
+          font-size: .8rem;
+     }
+     nav li {
+          padding-left: 10px;
+     }
+     nav img {
+          width: 100px;
+          padding: 0;
+          margin: 0;
+     }
+}
+.main {
+     clear: both;
+     float:left;
+     padding: 0 0 0 1%;
+}
+.hero {
+     width: 100%;
+     height: 500px;
+}
+.hero h1{
+     width: 65%;
+     padding: 5% 5% 5% 10%;
+     margin: 2%;
+}
+.form *{
+     float: left;
+     border: none; 
+     
+}
+form input{
+     width: 400px;
+     height: 2rem;
+     border-top-left-radius: 3px;
+     border-bottom-left-radius: 3px;
+}
+.locationButton {
+     float: left; 
+     height: 2rem;
+     background-color:rgb(10, 122, 66);
+     border-top-right-radius: 3px;
+     border-bottom-right-radius: 3px;  
+     color:white; 
+     width: 100px; 
+}
+.socials  {
+     width: 20%;
+     clear: both;
+     padding: 5% 0;
+     display: flex;
+     justify-content: space-between;
+}
+
+.aboutUs {
+     width: 100%;
+     height: 400px;
+     padding: 5%;
+}
+.aboutUs *{
+     display: flex;
+     flex-direction: column;
+     margin: 3% 20%;
+     color: white;
+
+}
+
+.viewMenu {
+     width: 100%;
+     height: auto;
+     display: flex;
+     flex-direction: column;
+     text-align: center;
+     padding: 5% 2%;
+}
+.viewMenu h2 {
+     padding: 2%;
+}
+.specials {
+     display: flex;
+     justify-content: space-around;
+     padding: 1% 3%;
+     border-bottom: 1px solid grey;
+}
+.specialImages {
+     display: flex;
+     justify-content: space-between;
+     flex-wrap: wrap;
+     margin: 2% 1%;     
+}
+.specialImages * {
+     width: 25%;
+     padding: 1%;
+}
+
+.ourHours {
+     width: 100%;
+     height: auto;
+     display: flex;
+     flex-direction: column;
+     text-align: center;
+     padding: 10%;
+}
+
+.ourHours * {
+     padding: 1%;
+}
+
+.hours {
+     display: flex;
+     align-items: center;
+}
+
+.colOne, .colTwo {
+     display: flex;
+     flex-direction: column;
+     width: 50%;
+     align-items: center;
+}
+
+.days {
+     font-size: 1.2rem;
+     font-weight: bold;
+     text-decoration: underline;
+}
+.times {
+     font-family: 'Yeseva One', cursive, serif;
+     font-size: .8rem;
+}
+
+.location {
+     padding: 1% 5%;     
+}
+
+.sunset {
+     max-width: 60%;
+     padding: 5%;
+     display: block;
+     float: left;
+     margin: auto;
+     border-radius: 50%;
+}
+
+
+.menu {
+     display: flex;
+     justify-content: center;
+     line-height: 1.2rem;
+     width: 80%;
+     margin: auto;
+}
+
+@media screen (max-width: 480px) {
+     .menu {
+          display: block;
+          width: 100%;
+     }
+}
+ 
+
+     
+
+
+
+
+
+
